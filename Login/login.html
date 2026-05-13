@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+        <main class="content-main">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="card shadow mt-5">
+                            <nav class="card-header bc-header navbar-light bg-white p-3 rounded-top">
+                                <div class="container-fluid d-flex align-items-center gap-3">
+                                    <img src="../EntornoWeb/img/Logo.png" alt="Logo" width="80" height="80" />
+                                    <div>
+                                        <h1 class="h4 mb-1 text-dark">Bienvenido a San Isidro</h1>
+                                        <p class="mb-0 text-dark">Tu droguería de confianza</p>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="card-body px-4 py-4 text-dark">
+                                <form action="#" method="post">
+                                    <div class="mb-4">
+                                        <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                                        <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="ejemplo@correo.com" required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label fw-semibold">Contraseña</label>
+                                        <div class="input-group rounded-pill overflow-hidden border">
+                                            <input type="password" class="form-control border-0" id="password" name="password" placeholder="Escribe tu contraseña" required />
+                                            <button class="btn btn-outline-secondary border-0" type="button" id="togglePassword" aria-label="Mostrar contraseña">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8z"/>
+                                                    <path d="M8 5.5A2.5 2.5 0 1 1 5.5 8 2.5 2.5 0 0 1 8 5.5z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid mt-4">
+                                        <button type="submit" class="btn btn-warning btn-lg rounded-pill fw-bold">Ingresar</button>
+                                    </div>
+                                </form>
+                                <p class="text-center text-danger mt-3 mb-0">¿No tienes cuenta? <a href="#" class="text-decoration-none">Crea una aquí</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const togglePassword = document.getElementById('togglePassword');
+            const passwordInput = document.getElementById('password');
+            togglePassword?.addEventListener('click', () => {
+                const type = passwordInput.type === 'password' ? 'text' : 'password';
+                passwordInput.type = type;
+                togglePassword.innerHTML = type === 'password'
+                    ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8z"/><path d="M8 5.5A2.5 2.5 0 1 1 5.5 8 2.5 2.5 0 0 1 8 5.5z"/></svg>'
+                    : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16"><path d="M13.359 11.238C14.04 10.505 14.7 9.606 15.173 8.751a.5.5 0 0 0 0-.5C14.772 7.284 13.727 5.56 11.83 4.179A9.678 9.678 0 0 0 8 3.5c-1.544 0-2.99.323-4.23.86L5.027 5.62A2.5 2.5 0 0 1 8 5.5c1.105 0 2.042.72 2.378 1.713l2.981 2.024z"/><path d="M13.646 14.354a.5.5 0 0 0 .708-.708l-12-12a.5.5 0 1 0-.708.708l12 12zM4.504 7.856a3.5 3.5 0 0 1 4.64 4.64l-.441-.299a2.5 2.5 0 0 0-3.294-3.294l-.905-.905z"/></svg>';
+            });
+        </script>
+    </body>
+</html>
