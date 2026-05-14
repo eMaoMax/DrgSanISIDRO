@@ -22,25 +22,20 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-5">
-                        <div class="card shadow mt-5">
-                            <nav class="card-header bc-header navbar-light bg-white p-3 rounded-top">
-                                <div class="container-fluid d-flex align-items-center gap-3">
-                                    <img src="../EntornoWeb/img/Logo.png" alt="Logo" width="80" height="80" />
-                                    <div>
-                                        <h1 class="h4 mb-1 text-dark">Bienvenido a San Isidro</h1>
-                                        <p class="mb-0 text-dark">Tu droguería de confianza</p>
-                                    </div>
+                        <div class="card shadow mt-5 custom-card">
+                            <div class="card-body px-4 py-5">
+                                <div class="text-center mb-4">
+                                    <h1 class="h4 mb-1 text-white fw-bold">Bienvenido a San Isidro</h1>
+                                    <p class="mb-0 text-white">Tu droguería de confianza</p>
                                 </div>
-                            </nav>
-                            <div class="card-body px-4 py-4 text-dark">
                                 <form action="#" method="post">
                                     <div class="mb-4">
-                                        <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                                        <label for="email" class="form-label fw-semibold text-white">Correo electrónico</label>
                                         <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="ejemplo@correo.com" required />
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password" class="form-label fw-semibold">Contraseña</label>
-                                        <div class="input-group rounded-pill overflow-hidden border">
+                                        <label for="password" class="form-label fw-semibold text-white">Contraseña</label>
+                                        <div class="input-group rounded-pill overflow-hidden border-0">
                                             <input type="password" class="form-control border-0" id="password" name="password" placeholder="Escribe tu contraseña" required />
                                             <button class="btn btn-outline-secondary border-0" type="button" id="togglePassword" aria-label="Mostrar contraseña">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
@@ -50,11 +45,11 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="d-grid mt-4">
+                                    <div class="d-grid mt-5 spacing-custom">
                                         <button type="submit" class="btn btn-warning btn-lg rounded-pill fw-bold">Ingresar</button>
                                     </div>
                                 </form>
-                                <p class="text-center text-danger mt-3 mb-0">¿No tienes cuenta? <a href="#" class="text-decoration-none">Crea una aquí</a></p>
+                                <p class="text-center text-white mt-3 mb-0">¿No tienes cuenta? <a href="#" class="text-white text-decoration-none">Crea una aquí</a></p>
                             </div>
                         </div>
                     </div>

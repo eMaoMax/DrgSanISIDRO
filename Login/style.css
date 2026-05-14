@@ -1,3 +1,55 @@
 .card {
      border-radius: 1rem; /* Esquinas más redondeadas */    
 }
+
+.custom-card {
+    background: linear-gradient(180deg, #003d82 0%, #00468f 100%);
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('../EntornoWeb/img/Logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 125%;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.custom-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-card .form-control {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+}
+
+.custom-card .input-group {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-card .btn-outline-secondary {
+    color: #6c757d;
+}
+
+.custom-card .btn-warning {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+}
+
+.spacing-custom {
+    padding-top: 2.4rem;
+}
