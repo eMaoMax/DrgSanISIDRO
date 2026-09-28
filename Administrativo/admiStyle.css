@@ -1,0 +1,172 @@
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin-header {
+    height: 180px !important; 
+    padding: 0 !important;    
+    background: radial-gradient(circle at top, rgba(145, 205, 255, 0.55) 0%, transparent 40%),
+                linear-gradient(180deg, #58a5ff 0%, #2975d5 40%, #0f4ab6 75%, #072b79 100%) !important;
+    background-color: #2975d5 !important;
+    box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.admin-header .row {
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.mobile-header-fix {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.admin-logo {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 24rem !important; 
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15)) !important;
+    display: block !important;
+}
+
+.admin-header .web-title {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) !important;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    padding-top: 2.8rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+.admin-header p {
+    text-align: center !important; 
+}
+
+.boton {
+    display: flex !important;
+    justify-content: center !important; /* Cambia la alineación derecha por el centro en PC */
+    align-items: center !important;
+    margin-top: 1.2rem !important;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-shadow-custom {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de las Tarjetas de Menú */
+.menu-card {
+    background-color: var(--bs-tertiary-bg);
+    border: 1px solid var(--bs-border-color-translucent);
+    border-radius: 1.25rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Efecto al pasar el mouse por encima */
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Contenedor circular para los iconos */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Títulos de los módulos dentro de la tarjeta */
+.menu-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bs-body-color);
+    text-align: center;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Colores temáticos para identificar cada operación */
+.bg-ventas { background-color: #e67e22; }      
+.bg-inventario { background-color: #9b59b6; }  
+.bg-productos { background-color: #2ecc71; }   
+.bg-laboratorios { background-color: #3498db; }
+.bg-detalles { background-color: #34495e; }    
+.bg-usuarios { background-color: #e74c3c; }    
+.bg-roles { background-color: #16a085; }   
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .admin-header {
+        height: auto !important; 
+        padding-top: 0.1rem !important; 
+        padding-bottom: 0.8rem !important;
+    }
+    
+    .admin-header .row {
+        --bs-gutter-y: 0rem !important;
+        justify-content: center !important;
+    }
+
+    .mobile-header-fix {
+        margin-top: -1.9rem !important;
+        padding-top: 0 !important;
+        margin-bottom: -3.9rem !important;
+        padding-bottom: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    /* En celulares el logo se reduce un poco para dar espacio a los textos */
+    .admin-logo {
+        max-width: 23rem !important; 
+        margin-bottom: 0.9rem !important;
+    }
+    
+    .admin-header .web-title {
+        font-size: 1.1rem !important;
+        line-height: 1.1 !important;
+        margin-top: -2.5rem !important;
+        margin-bottom: 0.1rem !important;
+        text-align: center !important;
+    }
+    
+    .admin-header p {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.8rem !important;
+        text-align: center !important;
+    }
+    .boton {
+        display: flex !important;
+        justify-content: center !important; 
+        width: 100% !important;
+        margin-top: 1rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+}

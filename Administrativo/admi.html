@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panel Administrativo - Droguería San Isidro FCH</title>
+
+    <!-- Favicon (Asegúrate de colocar tu imagen en la carpeta img/) -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="admiStyle.css" />
+</head>
+<body>
+
+    <header class="admin-header mb-5">
+        <div class="container-fluid px-4 h-100 d-flex align-items-center">
+            <div class="row align-items-center text-center w-100 gy-2">
+                
+                <!-- Logo -->
+                <div class="col-12 col-md-4 text-md-start order-1 mobile-header-fix">
+                    <a href="admi.html">
+                        <img src="img/Logo.png" alt="Logo Droguería San Isidro" class="img-fluid admin-logo">
+                    </a>
+                </div>
+                
+                <!-- Título y Usuario -->
+                <div class="col-12 col-md-4 order-2">
+                    <h1 class="text-white text-shadow-custom web-title m-0">Bienvenido a Droguería San Isidro FCH</h1>
+                    <p class="m-0 text-white opacity-75 small font-poppins">Hola <span id="userName">Administrador</span></p>
+                </div>
+                
+                <!-- Botones Acciones (Tema + Cerrar Sesión) -->
+                <div class="boton col-12 col-md-4 text-md-end order-3 d-flex justify-content-center justify-content-md-end align-items-center gap-2">
+                    <!-- Botón de Modo Oscuro / Claro -->
+                    <button id="btnThemeToggle" class="btn btn-outline-light btn-sm rounded-pill px-3 shadow-sm">
+                        <i id="themeIcon" class="bi bi-moon-stars-fill me-1"></i>
+                        <span id="themeText">Oscuro</span>
+                    </button>
+
+                    <!-- Botón Cerrar Sesión -->
+                    <a href="../Login/vista/login.html" id="btnLogout" class="btn btn-light btn-sm rounded-pill fw-bold px-4 text-primary shadow-sm">
+                        Cerrar Sesión
+                    </a>
+                </div>               
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-4 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+            
+            <!-- Módulo Facturación (Ventas) -->
+            <div class="col">
+                <a href="ModulosPanel/Ventas/Ventas.html" class="menu-card">
+                    <div class="icon-circle bg-ventas">
+                        <i class="bi bi-cart-check fs-2"></i>
+                    </div>
+                    <h2 class="menu-title">Ventas / Facturación</h2>
+                </a>
+            </div>
+
+            <!-- Módulo Detalle de Ventas -->
+            <div class="col">
+                <a href="ModulosPanel/ReporteVentas/ReporteVentas.html" class="menu-card">
+                    <div class="icon-circle bg-detalles">
+                        <i class="bi bi-receipt fs-2"></i>
+                    </div>
+                    <h2 class="menu-title">Reporte de Ventas</h2>
+                </a>
+            </div>
+
+            <!-- Módulo Productos -->
+            <div class="col">
+                <a href="ModulosPanel/Productos/Productos.html" class="menu-card">
+                    <div class="icon-circle bg-productos">
+                        <i class="bi bi-capsule fs-2"></i>
+                    </div>
+                    <h2 class="menu-title">Catálogo Productos</h2>
+                </a>
+            </div>
+
+            <!-- Módulo Inventario -->
+            <div class="col">
+                <a href="ModulosPanel/Inventario/Inventario.html" class="menu-card">
+                    <div class="icon-circle bg-inventario">
+                        <i class="bi bi-boxes fs-2"></i>
+                    </div>
+                    <h2 class="menu-title">Inventario / Stock</h2>
+                </a>
+            </div>
+
+            <!-- Módulo Laboratorios -->
+            <div class="col">
+                <a href="ModulosPanel/Laboratorios/Laboratorios.html" class="menu-card">
+                    <div class="icon-circle bg-laboratorios">
+                        <i class="bi bi-prescription2 fs-2"></i>
+                    </div>
+                    <h2 class="menu-title">Laboratorios / Proveedores</h2>
+                </a>
+            </div>
+
+            <!-- Módulo Usuarios -->
+            <div class="col">
+                <a href="ModulosPanel/Usuarios/Usuarios.html" class="menu-card">
+                    <div class="icon-circle bg-usuarios">
+                        <i class="bi bi-people fs-2"></i>
+                    </div>
+                    <h2 class="menu-title">Gestión Usuarios</h2>
+                </a>
+            </div>
+
+            <!-- Módulo Roles -->
+            <div class="col">
+                <a href="ModulosPanel/Roles/Rol.html" class="menu-card">
+                    <div class="icon-circle bg-roles">
+                        <i class="bi bi-shield-lock fs-2"></i>
+                    </div>
+                    <h2 class="menu-title">Roles de Seguridad</h2>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script de Sesión y Tema -->
+    <script src="Js/limpiezaSession.js"></script>
+    <!-- Footer -->
+    <script src="Js/GlobalUI.js"></script>
+</html>
