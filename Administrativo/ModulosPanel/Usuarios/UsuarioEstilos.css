@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-header {
+    min-height: 65px !important;
+    height: auto !important;
+    padding: 0.4rem 0 !important;
+    background: radial-gradient(circle at top, rgba(145, 205, 255, 0.55) 0%, transparent 40%),
+                linear-gradient(180deg, #58a5ff 0%, #2975d5 40%, #0f4ab6 75%, #072b79 100%) !important;
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.15), 0 2px 6px rgba(0, 0, 0, 0.12) !important;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+
+.admin-logo {
+    max-width: 18rem !important;
+    height: auto !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.admin-logo:hover {
+    transform: scale(1.02);
+}
+
+.admin-header .web-title {
+    font-size: 2.15rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    line-height: 1.2 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+sub-nav {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.admin-header .web-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de Navegación */
+.cabeza {
+    border-bottom: 1px solid var(--bs-border-color-translucent) !important;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+}
+
+/* Encabezado del Módulo y Títulos */
+h2 {
+    font-weight: 700;
+    color: var(--bs-body-color);
+}
+
+/* Tarjetas y Modales adaptados al tema */
+.card {
+    background-color: var(--bs-secondary-bg);
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.modal-content {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    border-radius: 1.25rem;
+    border: 1px solid var(--bs-border-color-translucent);
+}
+
+.modal-header, .modal-footer {
+    border-color: var(--bs-border-color-translucent);
+}
+
+/* Tablas Responsivas */
+.table {
+    --bs-table-bg: transparent;
+    color: var(--bs-body-color);
+}
+
+.table-light {
+    --bs-table-bg: var(--bs-tertiary-bg);
+    color: var(--bs-body-color);
+}
+
+.table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    letter-spacing: 0.5px;
+}
+
+/* Inputs y Selects */
+.form-control, .form-select, .input-group-text {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    border-color: var(--bs-border-color);
+    border-radius: 0.5rem;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    box-shadow: 0 0 0 0.25rem rgba(41, 117, 213, 0.25);
+}
+
+/* Adaptación Responsive en pantallas pequeñas */
+@media (max-width: 768px) {
+    .admin-logo {
+        max-width: 6.5rem !important;
+    }
+    
+    .admin-header .web-title {
+        font-size: 1.1rem !important;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .table-responsive {
+        border-radius: 0.75rem;
+        border: 1px solid var(--bs-border-color-translucent);
+    }
+
+    .btn-primary {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    
+}
+
+
+
+/* Ajustes para Celulares */
+@media (max-width: 768px) {
+    
+}

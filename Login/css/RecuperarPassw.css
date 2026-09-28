@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+main {
+    background-color: #d2e1f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 15px;
+}
+
+.card {
+    border-radius: 1rem; /* Esquinas más redondeadas */    
+}
+
+.custom-card {
+    background: linear-gradient(180deg, #003d82 0%, #00468f 100%);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    width: 100%; 
+    max-width: 450px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos de los inputs e iconos del input-group */
+.custom-card .form-control {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.custom-card .form-control:focus {
+    box-shadow: none;
+    background-color: #ffffff;
+}
+
+.custom-card .input-group-text {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+/* Botón principal */
+.btn-custom {
+    background-color: #ffca28;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #ffd043;
+    transform: translateY(-1px);
+}
+
+/* Enlace de retorno */
+.custom-card .btn-recover {
+    color: #ffd043;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.custom-card .btn-recover:hover {
+    color: #ffffff;
+    text-decoration: underline !important;
+}

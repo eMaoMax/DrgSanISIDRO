@@ -1,0 +1,14 @@
+.custom-card .input-group {
+    background-color: #ffffff;
+}
+
+.custom-card .form-control {
+    background-color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-card .form-control:focus {
+    box-shadow: none;
+    background-color: #ffffff;
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+main {
+    background-color: #d2e1f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 15px;
+}
+
+.card {
+     border-radius: 1rem; /* Esquinas más redondeadas */    
+}
+
+.custom-card {
+    background: linear-gradient(180deg, #003d82 0%, #00468f 100%);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    width: 100%; 
+    max-width: 450px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 125%;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.custom-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-card .form-control {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-card .input-group {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-card .form-label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-card .btn{
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-card .btn-outline-secondary {
+    color: #6c757d;
+}
+
+.custom-card .btn-warning {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+}
+
+.custom-card .btn-recover {
+    color: #ffd043; 
+    font-weight: 600; /* Grosor para que sea fácil de leer */
+    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+    display: inline-block;
+    margin-top: 0.2rem; /* Empuje hacia abajo */
+}
+
+/* Efecto hover (PC) o presiona (Móvil) */
+.custom-card .btn-recover:hover {
+    color: #fff; /* Cambia a blanco sutilmente al pasar el cursor */
+    text-decoration: underline !important; /* Línea decorativa clásica de accesibilidad */
+}
+
+.spacing-custom {
+    padding-top: 2.4rem;
+}
+
+
+/* Ajuste responsive para el logo de fondo */
+@media (max-width: 576px) {
+    .custom-card::before {
+        background-size: 130%; 
+        opacity: 0.15; /* Bajamos más la opacidad en móvil para mejorar legibilidad */
+    }
+    
+    .custom-card .card-body {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
